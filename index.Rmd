@@ -51,6 +51,10 @@ We will interpret!
 - 80/20 Split on Cleaning vs Modeling
 - Reproducibility
 
+## The 80/20 Split
+
+Not just for training/testing proportions!
+
 ## Thanks
 
 Any questions?
