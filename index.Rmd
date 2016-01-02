@@ -16,7 +16,7 @@ output:
     +  Explore
     +  Model
     +  Interpret
-- Tips and Trikcs
+- Tips and Tricks
 
 ## Data Problems
 
