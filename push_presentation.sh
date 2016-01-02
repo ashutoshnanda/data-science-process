@@ -6,9 +6,10 @@ usage="./push_presentation.sh \"<commit message for current branch>\" [\"<commit
 
 # Assumptions
 # - One already has a gh-pages branch
-# - The remote is called origin
-# - One is on the current branch (usually master)
+# - One's GitHub remote is called origin
+# - One is on the current branch
 # - One has compiled the new presentation into index.html
+# - One isn't tracking index.html in the current branch
 
 if (( $# <= 0 || $# >= 3 )); then
     echo "Expecting 1 or 2 parameters, received $# parameters..."
