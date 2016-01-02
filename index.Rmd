@@ -55,6 +55,13 @@ We will interpret!
 
 Not just for training/testing proportions!
 
+## Reproducibility
+
+- We need to be able to retrace our steps
+    + Helpful for debugging
+- Others need to recreate our results
+    + Gives credibility to our findings
+
 ## Thanks
 
 Any questions?
