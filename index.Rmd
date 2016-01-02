@@ -1,0 +1,56 @@
+---
+title: "Data Science Process"
+author: "Ashutosh Nanda"
+output:
+  ioslides_presentation:
+    logo: CDSS.png
+    css: cdss.css
+---
+
+## Overview
+
+- Data Problems
+- OSEMN Process
+    +  Obtain
+    +  Scrub
+    +  Explore
+    +  Model
+    +  Interpret
+- Tips and Trikcs
+
+## Data Problems
+
+How do we use data to solve problems?
+
+## Process of Doing Data Science
+
+OSEMN
+
+## Obtain 
+
+We will obtain!
+
+## Scrub 
+
+We will scrub!
+
+## Explore 
+
+We will explore!
+
+## Model 
+
+We will model!
+
+## Interpret
+
+We will interpret!
+
+## Tips and Tricks
+
+- 80/20 Split on Cleaning vs Modeling
+- Reproducibility
+
+## Thanks
+
+Any questions?

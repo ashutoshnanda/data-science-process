@@ -1,0 +1,18 @@
+/* For the bottom left logo */
+slides > slide:not(.nobackground):before {
+  width: 100px;
+  height: 100px;
+  background-size: 100px 100px;
+}
+
+/* For the initial slide logo */
+.gdbar img {
+  width: 200px !important;
+  height: 200px !important;
+  margin: 25px 25px !important;
+}
+
+.gdbar {
+  width: 250px !important;
+  height: 250px !important;
+}
