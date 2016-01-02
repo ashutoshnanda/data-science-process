@@ -17,6 +17,12 @@ if (( $# <= 0 || $# >= 3 )); then
     exit 1
 fi
 
+if [ ! -f "index.html" ]; then
+    echo "No presentation found!"
+    echo "Please recompile the presentation, and make sure its name is \"index.html\"."
+    exit 1
+fi
+
 current_branch_message=""
 gh_pages_branch_message=""
 if (( $# == 1 )); then
