@@ -16,3 +16,28 @@ slides > slide:not(.nobackground):before {
   width: 250px !important;
   height: 250px !important;
 }
+
+/* For blockquote magic */
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 0em 30px;
+  padding: 0.5em 0.5em;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote p {
+  display: inline;
+}
+blockquote a {
+  color: #bbb;
+  font-size: 0.75em;
+}
+.citation {
+  color: #bbb;
+  font-size: 0.75em;
+}
+
+/* For resizing images */
+img {
+  width: 70%;
+}

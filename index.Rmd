@@ -3,32 +3,68 @@ title: "Data Science Process"
 author: "Ashutosh Nanda"
 output:
   ioslides_presentation:
-    logo: CDSS.png
     css: cdss.css
+    fig_caption: yes
+    logo: CDSS.png
 ---
 
 ## Overview
 
 - Data Problems
 - OSEMN Process
-    +  Obtain
-    +  Scrub
-    +  Explore
-    +  Model
-    +  Interpret
 - Tips and Tricks
 
 ## Data Problems
 
 How do we use data to solve problems?
 
+It's not always clear how to go from data to clear understanding. (Real world problems cannot by tackled by just reading in a CSV and blindly fitting a model.)
+
+Example: Genome Sequencing <br>
+Biologists were able to acquire full instruction manual on how an organism will develop, but multidisciplinary collaborations and advances in mathematical and statistical methods were needed to rigorously understand and fully utilize such sequences.
+
+## Data Problems (continued)
+
+Modern data problems don't come with a cookbook type solution because domain expertise is not always present for the datasets we are analyzing. 
+
+> `-` research in which data vastly outstrip our ability to posit models is qualitatively different
+> <br>
+> `-` complex systems for which the underlying models are not yet known but for which data are abundant
+> <br>
+> [Applying Big Data Approaches to Biological Problems, Chris Wiggins (2012)](http://engineering.columbia.edu/web/newsletter/fall_2012/applying_big_data_approaches_biological_problems)
+
+<br> Hence, we need a **process** of doing data science.
+
 ## Process of Doing Data Science
 
-OSEMN
+Commonly Recommended Process: OSEMN
+
+- Sounds like "awesome"
+- Stands for:
+    + Obtain
+    + Scrub
+    + Explore
+    + Model
+    + iNterpret
 
 ## Obtain 
 
-We will obtain!
+- Tends to be overlooked, but is in fact critical
+- Process needs to be scalable
+    + Using APIs 
+        * Python: [`requests`](http://docs.python-requests.org/en/latest/); 
+        * R: [`jsonlite`](https://cran.r-project.org/web/packages/jsonlite/vignettes/json-apis.html)
+    + SQL Queries 
+        * Python: [`pandas`](http://pandas.pydata.org/pandas-docs/stable/io.html#sql-queries) (with [SQLAlchemy](http://www.sqlalchemy.org/))
+        * Python: [`pandas`](http://www.datacarpentry.org/python-ecology/08-working-with-sql) (with [SQLite](https://www.sqlite.org/))
+        * R: [`dplyr`](https://cran.r-project.org/web/packages/dplyr/vignettes/databases.html))
+    
+## Obtain 
+- Tends to be overlooked, but is in fact critical
+- Process needs to be scalable
+    + Command Line Tools
+        * UNIX Tools: `cat`, `grep`, `uniq`, `sort`, `sed`, `awk`
+        * [Data Science at the Command Line: Facing the Future with Time-Tested Tools (Janssens; 2014)](http://shop.oreilly.com/product/0636920032823.do)
 
 ## Scrub 
 
@@ -38,18 +74,26 @@ We will scrub!
 
 We will explore!
 
+Best ideas for feature engineering (which is the major point since models are relatively all same once you hit enough data) come from this
+Dirty plots will help with this (you don't need detailed plots, enough to retrace your steps)
+Notebooks will allow you to note down ideas that will come in handy during the modeling phase
+
 ## Model 
 
-We will model!
+Make sure to use cross validation techniques
+Make the right tradeoff between interpretability and performance (if goal is prediction, go nuts with a deep learning network, but if goal is analysis and understanding, try something simpler like a Support Vector Machine)
 
-## Interpret
+## iNterpret
 
-We will interpret!
+> The purpose of computing is insight, not numbers.
+> <br>
+> [Richard Hamming, Numerical Methods for Scientists and Engineers (1962)](http://www-history.mcs.st-and.ac.uk/Extras/HammingReviews.html)
 
 ## Tips and Tricks
 
 - 80/20 Split on Cleaning vs Modeling
 - Reproducibility
+- Iteration
 
 ## The 80/20 Split
 
@@ -61,6 +105,14 @@ Not just for training/testing proportions!
     + Helpful for debugging
 - Others need to recreate our results
     + Gives credibility to our findings
+    
+## Iteration
+
+![An astute comment from Hadley Wickham](wickham_comment.png)
+
+- creator of `ggplot2`, `dplyr`, `devtools`
+- Chief Scientist at RStudio 
+- ... yeah, that Hadley Wickham
 
 ## Thanks
 
