@@ -36,7 +36,7 @@
       // Author information
       presenters: [
             {
-        name:  'Ashutosh Nanda' ,
+        name:  'Ashutosh Nanda<br>ashutoshnanda.github.io/data-science-process' ,
         company: '',
         gplus: '',
         twitter: '',
@@ -162,7 +162,7 @@
 <li>Using APIs
 
 <ul>
-<li>Python: <a href='http://docs.python-requests.org/en/latest/' title=''><code>requests</code></a>;</li>
+<li>Python: <a href='http://docs.python-requests.org/en/latest/' title=''><code>requests</code></a></li>
 <li>R: <a href='https://cran.r-project.org/web/packages/jsonlite/vignettes/json-apis.html' title=''><code>jsonlite</code></a></li>
 </ul></li>
 <li>SQL Queries
@@ -170,7 +170,7 @@
 <ul>
 <li>Python: <a href='http://pandas.pydata.org/pandas-docs/stable/io.html#sql-queries' title=''><code>pandas</code></a> (with <a href='http://www.sqlalchemy.org/' title=''>SQLAlchemy</a>)</li>
 <li>Python: <a href='http://www.datacarpentry.org/python-ecology/08-working-with-sql' title=''><code>pandas</code></a> (with <a href='https://www.sqlite.org/' title=''>SQLite</a>)</li>
-<li>R: <a href='https://cran.r-project.org/web/packages/dplyr/vignettes/databases.html' title=''><code>dplyr</code></a>)</li>
+<li>R: <a href='https://cran.r-project.org/web/packages/dplyr/vignettes/databases.html' title=''><code>dplyr</code></a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -188,22 +188,52 @@
 <li>UNIX Tools: <code>cat</code>, <code>grep</code>, <code>uniq</code>, <code>sort</code>, <code>sed</code>, <code>awk</code></li>
 <li><a href='http://shop.oreilly.com/product/0636920032823.do' title=''>Data Science at the Command Line: Facing the Future with Time-Tested Tools (Janssens; 2014)</a></li>
 </ul></li>
+<li>Web Scraping
+
+<ul>
+<li>Python: <a href='http://web.stanford.edu/~zlotnick/TextAsData/Web_Scraping_with_Beautiful_Soup.html' title=''><code>BeautifulSoup</code></a></li>
+<li>R: <a href='http://blog.rstudio.org/2014/11/24/rvest-easy-web-scraping-with-r/' title=''><code>rvest</code></a></li>
+</ul></li>
 </ul></li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2>Scrub</h2></hgroup><article  id="scrub">
 
-<p>We will scrub!</p>
+<p>The real world is very messy, so we need to do some clean up before processing it.</p>
+
+<ul>
+<li>Tidy data</li>
+</ul>
 
 </article></slide><slide class=''><hgroup><h2>Explore</h2></hgroup><article  id="explore">
 
-<p>We will explore!</p>
+<ul>
+<li>Best ideas for feature engineering start here
 
-<p>Best ideas for feature engineering (which is the major point since models are relatively all same once you hit enough data) come from this Dirty plots will help with this (you don&#39;t need detailed plots, enough to retrace your steps) Notebooks will allow you to note down ideas that will come in handy during the modeling phase</p>
+<ul>
+<li>Feature engineering: designing new variables that capture patterns in data</li>
+<li>Most models perform roughly equivalently once you get enough data</li>
+</ul></li>
+<li>&quot;Dirty&quot; plots will help with this
+
+<ul>
+<li>Don&#39;t have to be pretty, have axis labels, etc.</li>
+<li>Do have to be fast, so that we can iterate</li>
+</ul></li>
+<li>Notebook/R Markdown will allow you to note ideas that come in handy during modeling</li>
+</ul>
 
 </article></slide><slide class=''><hgroup><h2>Model</h2></hgroup><article  id="model">
 
-<p>Make sure to use cross validation techniques Make the right tradeoff between interpretability and performance (if goal is prediction, go nuts with a deep learning network, but if goal is analysis and understanding, try something simpler like a Support Vector Machine)</p>
+<ul>
+<li>Make sure to use cross validation techniques</li>
+<li>Make the right tradeoff between interpretability and performance
+
+<ul>
+<li>If you just care about prediction, go nuts with a deep learning network</li>
+<li>If the goal is analysis and understanding, try something simpler like a Support Vector Machine</li>
+</ul></li>
+</ul>
 
 </article></slide><slide class=''><hgroup><h2>iNterpret</h2></hgroup><article  id="interpret">
 
@@ -215,13 +245,25 @@
 
 <ul>
 <li>80/20 Split on Cleaning vs Modeling</li>
+<li>More Data Wins</li>
 <li>Reproducibility</li>
 <li>Iteration</li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2>The 80/20 Split</h2></hgroup><article  id="the-8020-split">
 
-<p>Not just for training/testing proportions!</p>
+<aside class='note'><section>Not just for training and testing proportions!</section></aside>
+
+<ul>
+<li>Time spent preparing data compared to time modeling data is 80/20</li>
+<li>Have to get the 80% right to get interesting 20% results</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>More Data Wins</h2></hgroup><article  id="more-data-wins">
+
+<p>Scaling to Very Very Large Corpora for Natural Language Disambiguation (Banko, Brill; 2001)</p>
+
+<p><img style="height: 400px !important; margin-left: 125px" src="more_data.png"/></p>
 
 </article></slide><slide class=''><hgroup><h2>Reproducibility</h2></hgroup><article  id="reproducibility">
 
