@@ -73,7 +73,7 @@ Commonly Recommended Process: OSEMN
 
 The real world is very messy, so we need to do some clean up before processing it.
 
-- Tidy data
+- [Tidy data](http://vita.had.co.nz/papers/tidy-data.pdf)
 
 ## Explore
 
