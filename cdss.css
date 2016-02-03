@@ -41,3 +41,8 @@ blockquote a {
 img {
   width: 70%;
 }
+
+#more-data-wins img {
+  height: 450px !important;
+  margin-left: 150px
+}

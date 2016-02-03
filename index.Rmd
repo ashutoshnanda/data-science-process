@@ -116,8 +116,7 @@ Not just for training and testing proportions!
 
 Scaling to Very Very Large Corpora for
 Natural Language Disambiguation (Banko, Brill; 2001)
-
-<img style="height: 400px !important; margin-left: 125px" src="more_data.png"/>
+![](more_data.png)
 
 ## Reproducibility
 
