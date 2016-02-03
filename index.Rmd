@@ -1,6 +1,6 @@
 ---
 title: "Data Science Process"
-author: "Ashutosh Nanda"
+author: "Ashutosh Nanda<br>ashutoshnanda.github.io/data-science-process"
 output:
   ioslides_presentation:
     css: cdss.css
@@ -52,12 +52,12 @@ Commonly Recommended Process: OSEMN
 - Tends to be overlooked, but is in fact critical
 - Process needs to be scalable
     + Using APIs 
-        * Python: [`requests`](http://docs.python-requests.org/en/latest/); 
+        * Python: [`requests`](http://docs.python-requests.org/en/latest/)
         * R: [`jsonlite`](https://cran.r-project.org/web/packages/jsonlite/vignettes/json-apis.html)
     + SQL Queries 
         * Python: [`pandas`](http://pandas.pydata.org/pandas-docs/stable/io.html#sql-queries) (with [SQLAlchemy](http://www.sqlalchemy.org/))
         * Python: [`pandas`](http://www.datacarpentry.org/python-ecology/08-working-with-sql) (with [SQLite](https://www.sqlite.org/))
-        * R: [`dplyr`](https://cran.r-project.org/web/packages/dplyr/vignettes/databases.html))
+        * R: [`dplyr`](https://cran.r-project.org/web/packages/dplyr/vignettes/databases.html)
     
 ## Obtain 
 - Tends to be overlooked, but is in fact critical
@@ -65,23 +65,32 @@ Commonly Recommended Process: OSEMN
     + Command Line Tools
         * UNIX Tools: `cat`, `grep`, `uniq`, `sort`, `sed`, `awk`
         * [Data Science at the Command Line: Facing the Future with Time-Tested Tools (Janssens; 2014)](http://shop.oreilly.com/product/0636920032823.do)
+    + Web Scraping
+        * Python: [`BeautifulSoup`](http://web.stanford.edu/~zlotnick/TextAsData/Web_Scraping_with_Beautiful_Soup.html)
+        * R: [`rvest`](http://blog.rstudio.org/2014/11/24/rvest-easy-web-scraping-with-r/)
 
 ## Scrub 
 
-We will scrub!
+The real world is very messy, so we need to do some clean up before processing it.
 
-## Explore 
+- Tidy data
 
-We will explore!
+## Explore
 
-Best ideas for feature engineering (which is the major point since models are relatively all same once you hit enough data) come from this
-Dirty plots will help with this (you don't need detailed plots, enough to retrace your steps)
-Notebooks will allow you to note down ideas that will come in handy during the modeling phase
+- Best ideas for feature engineering start here
+    + Feature engineering: designing new variables that capture patterns in data
+    + Most models perform roughly equivalently once you get enough data
+- "Dirty" plots will help with this 
+    + Don't have to be pretty, have axis labels, etc.
+    + Do have to be fast, so that we can iterate
+- Notebook/R Markdown will allow you to note ideas that come in handy during modeling
 
 ## Model 
 
-Make sure to use cross validation techniques
-Make the right tradeoff between interpretability and performance (if goal is prediction, go nuts with a deep learning network, but if goal is analysis and understanding, try something simpler like a Support Vector Machine)
+- Make sure to use cross validation techniques
+- Make the right tradeoff between interpretability and performance
+    + If you just care about prediction, go nuts with a deep learning network
+    + If the goal is analysis and understanding, try something simpler like a Support Vector Machine
 
 ## iNterpret
 
@@ -92,12 +101,23 @@ Make the right tradeoff between interpretability and performance (if goal is pre
 ## Tips and Tricks
 
 - 80/20 Split on Cleaning vs Modeling
+- More Data Wins
 - Reproducibility
 - Iteration
 
 ## The 80/20 Split
+<div class="notes">
+Not just for training and testing proportions!
+</div>
+- Time spent preparing data compared to time modeling data is 80/20
+- Have to get the 80% right to get interesting 20% results
 
-Not just for training/testing proportions!
+## More Data Wins
+
+Scaling to Very Very Large Corpora for
+Natural Language Disambiguation (Banko, Brill; 2001)
+
+<img style="height: 400px !important; margin-left: 125px" src="more_data.png"/>
 
 ## Reproducibility
 
