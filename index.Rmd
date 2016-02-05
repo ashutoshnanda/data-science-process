@@ -75,7 +75,7 @@ Commonly Recommended Process: [OSEMN](http://www.dataists.com/2010/09/a-taxonomy
 You have some sort of folder organization, probably data, explore_plots, reports, etc. (Will get into it later)
 </div>
 
-Pseduo-code:
+Pseudo-code:
 ```
 raw_data_folder = "<your folder here>"
 list_of_files = get_list_of_files()
@@ -94,7 +94,7 @@ Solution: [Tidy Data](http://vita.had.co.nz/papers/tidy-data.pdf)
 <div style="margin-top: -20px">
 1. Raw data
 2. Tidy data set
-3. A code book describing each varaible and its values in the tidy data set
+3. A code book describing each variable and its values in the tidy data set
 4. An explicit and exact recipe you used to go from 1 to 2 and 1 to 3
 </div>
 
@@ -109,7 +109,7 @@ You should be able to explain your data in simple sentences as opposed to highly
 
 ## Scrub
 
-Pseduo-code:
+Pseudo-code:
 ```
 def clean_up(f):
     f = transformation_1(f)
@@ -140,7 +140,7 @@ Define feature engineering
 
 ## Explore
 
-Pseduo-code:
+Pseudo-code:
 ```
 for column in variables:
     save(histogram of column)
@@ -184,14 +184,14 @@ The best way to let people understand your model is to let them play with it.
 ![](shiny.png)
 
 <br>
-It lets you generate interactive web applications using purely R code. (You can edit the resultant HTML, CSS, and JavaScript code.)
+Shiny lets you generate interactive web applications using purely R code. (You can edit the resultant HTML, CSS, and JavaScript code.)
 
 ## iNterpret
 
 ![](bokeh.png)
 
 <br>
-It lets you generate interactive web applications using Python and JavaScript code.
+Bokeh lets you generate interactive web applications using Python and JavaScript code.
 
 ## iNterpret
 
@@ -238,3 +238,13 @@ Natural Language Disambiguation (Banko, Brill; 2001)
 ## Thanks
 
 Any questions?
+
+## Next Steps
+
+- Look at the links in the presentation
+    - So many good resources!
+- [DevFest Data Science Curriculum](http://learn.devfe.st/datascience/)
+- Stay tuned for more CDSS events!
+    - [Mailing List](https://lists.columbia.edu/mailman/listinfo/cdss)
+    - [Facebook](https://www.facebook.com/cdsscu)
+    - [Website](http://cdssatcu.com/)
