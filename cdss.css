@@ -44,5 +44,23 @@ img {
 
 #more-data-wins img {
   height: 450px !important;
-  margin-left: 150px
+  display: block;
+  margin: 0 auto;
+}
+
+#interpret-1 img {
+  display: block;
+  margin: 0 auto;
+}
+
+#interpret-2 img {
+  display: block;
+  margin: 0 auto;
+  height: 150px;
+  width: 150px;
+}
+
+#iteration img {
+  display: block;
+  margin: 0 auto;
 }
